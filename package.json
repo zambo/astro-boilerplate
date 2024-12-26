@@ -1,14 +1,32 @@
 {
-  "name": "",
+  "name": "zambo-astro-boilerplate",
+  "description": "A simple boilerplate for Astro with typescript, tailwind, eslint, prettier, husky, vitest and playwright",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "prepare": "husky",
+    "test:watch": "vitest",
+    "test:run": "vitest run"
   },
   "dependencies": {
-    "astro": "^5.1.1"
+    "@astrojs/tailwind": "^5.1.4",
+    "@astrojs/ts-plugin": "^1.10.4",
+    "astro": "^5.1.1",
+    "tailwindcss": "^3.4.17"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@typescript-eslint/parser": "^8.18.2",
+    "eslint": "^9.17.0",
+    "eslint-plugin-astro": "^1.3.1",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "husky": "^9.1.7",
+    "prettier": "^3.4.2",
+    "prettier-plugin-astro": "^0.14.1",
+    "vitest": "^2.1.8"
   }
 }
